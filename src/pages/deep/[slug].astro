@@ -1,0 +1,44 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+export async function getStaticPaths() {
+  const deep = await getCollection('deep', ({ data }) => data.status === 'published');
+  return deep.map(entry => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const allSparks = await getCollection('sparks', ({ data }) => data.status === 'published');
+const contributing = allSparks.filter(s => entry.data.contributingSparks.includes(s.slug));
+---
+
+<BaseLayout title={entry.data.title}>
+  <nav class="breadcrumb">
+    <a href="/">Home</a> › <a href="/deep/">Deep Sparks</a> › {entry.data.title}
+  </nav>
+
+  <h1>{entry.data.title}</h1>
+  <div class="meta">
+    <span>{entry.data.readTime} min read</span>
+    <span>Last updated: {entry.data.lastUpdated.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</span>
+    <span>Built from {entry.data.contributingSparks.length} summaries</span>
+  </div>
+
+  <Content />
+
+  <div class="tags">
+    {entry.data.tags.map(tag => <a href={`/tag/${tag}/`}>#{tag}</a>)}
+  </div>
+
+  {contributing.length > 0 && (
+    <section class="related">
+      <h2>Articles that built this synthesis</h2>
+      <div class="grid">
+        {contributing.map(spark => <ArticleCard spark={spark} />)}
+      </div>
+    </section>
+  )}
+</BaseLayout>

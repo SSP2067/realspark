@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CreatorCard from '../../components/CreatorCard.astro';
+
+const creators = await getCollection('creators');
+const allSparks = await getCollection('sparks', ({ data }) => data.status === 'published');
+
+const creatorsWithCount = creators.map(creator => ({
+  creator,
+  count: allSparks.filter(s => s.data.creator === creator.slug).length,
+})).sort((a, b) => b.count - a.count);
+---
+
+<BaseLayout title="Creators">
+  <h1>Browse by Creator</h1>
+  <p style="color:#666; margin-bottom:2rem;">
+    All summaries organised by the creator or author behind the original source.
+  </p>
+  <div class="grid">
+    {creatorsWithCount.map(({ creator, count }) => (
+      <CreatorCard creator={creator} count={count} />
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import CreatorCard from '../components/CreatorCard.astro';
+
+const allSparks = await getCollection('sparks', ({ data }) => data.status === 'published');
+const latestSparks = allSparks.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()).slice(0, 6);
+
+const allCreators = await getCollection('creators');
+---
+
+<BaseLayout title="Realspark — Big ideas, fast reads">
+  <section class="hero">
+    <h1>The best ideas from videos, books, and research. In 5 minutes.</h1>
+    <p>Short, useful summaries so you don't have to watch everything.</p>
+    <a href="/youtube/">Start Reading →</a>
+  </section>
+
+  <section class="latest-sparks">
+    <h2>Latest Sparks</h2>
+    <div class="grid">
+      {latestSparks.map(spark => <ArticleCard spark={spark} />)}
+    </div>
+    <a href="/youtube/">View all →</a>
+  </section>
+
+  <section class="creators">
+    <h2>Browse by Creator</h2>
+    <div class="creator-row">
+      {allCreators.map(creator => <CreatorCard creator={creator} />)}
+    </div>
+    <a href="/creators/">See all creators →</a>
+  </section>
+</BaseLayout>

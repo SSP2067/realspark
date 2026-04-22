@@ -1,0 +1,67 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+export async function getStaticPaths() {
+  const sparks = await getCollection('sparks', ({ data }) => data.status === 'published');
+  return sparks.map(spark => ({ params: { slug: spark.slug }, props: { spark } }));
+}
+
+const { spark } = Astro.props;
+const { Content } = await spark.render();
+
+const creator = await getEntry('creators', spark.data.creator);
+
+const allSparks = await getCollection('sparks', ({ data }) => data.status === 'published');
+const related = allSparks
+  .filter(s => s.slug !== spark.slug && (
+    s.data.creator === spark.data.creator ||
+    s.data.tags.some(t => spark.data.tags.includes(t))
+  ))
+  .slice(0, 3);
+---
+
+<BaseLayout title={spark.data.title}>
+  <nav class="breadcrumb">
+    <a href="/">Home</a> › <a href="/youtube/">YouTube</a> › {spark.data.title}
+  </nav>
+
+  <article>
+    <h1>{spark.data.title}</h1>
+    <div class="meta">
+      <a href={`/youtube/`}>{spark.data.category}</a> ·
+      <a href={`/creators/${spark.data.creator}/`}>{creator?.data.name}</a> ·
+      {spark.data.readTime} min read · {spark.data.publishDate.toDateString()}
+    </div>
+
+    <Content />
+
+    <div class="tags">
+      {spark.data.tags.map(tag => <a href={`/tag/${tag}/`}>#{tag}</a>)}
+    </div>
+
+    {creator && (
+      <div class="creator-callout">
+        More from {creator.data.name} →
+        <a href={`/creators/${spark.data.creator}/`}>See all summaries</a>
+      </div>
+    )}
+
+    {spark.data.deepSpark && (
+      <div class="deep-spark-callout">
+        This post is part of a larger synthesis →
+        <a href={`/deep/${spark.data.deepSpark}/`}>{spark.data.deepSpark}</a>
+      </div>
+    )}
+  </article>
+
+  {related.length > 0 && (
+    <section class="related">
+      <h2>You might also like</h2>
+      <div class="grid">
+        {related.map(s => <ArticleCard spark={s} />)}
+      </div>
+    </section>
+  )}
+</BaseLayout>
