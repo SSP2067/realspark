@@ -7,6 +7,7 @@ tags: [mindset, high-performance, principles, success, self-improvement]
 sourceTitle: "These Simple Principles Will Make You 10x Better At Anything"
 sourceUrl: https://www.youtube.com/watch?v=Jqp7tADBkY8
 publishDate: 2026-04-23
+description: "Sandeep Swadia's 9 Monk Mantras go beyond standard success advice — operating principles for high-stakes people built on outcome detachment, accountability, and strategic focus."
 status: published
 ---
 

@@ -7,6 +7,7 @@ tags: [systems, productivity, habits, discipline, success]
 sourceTitle: "Success Is Hard Until You Build Systems Like This"
 sourceUrl: https://www.youtube.com/watch?v=p3F-1QyvHnY
 publishDate: 2026-04-23
+description: "Success feels hard when you're running on willpower. This video makes one surgical argument: replace willpower with five core systems and discipline becomes automatic."
 status: published
 ---
 

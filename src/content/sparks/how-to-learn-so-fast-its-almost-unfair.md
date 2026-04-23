@@ -7,6 +7,7 @@ tags: [learning, productivity, neuroscience, skill-acquisition, deep-work]
 sourceTitle: "How To Learn So Fast It's Almost Unfair"
 sourceUrl: https://www.youtube.com/watch?v=npQ2IORdlvU
 publishDate: 2026-04-23
+description: "theMITmonk's 3C Protocol — Compress, Compile, Consolidate — is an engineering approach to learning that replaces cramming with a system that mirrors how the brain actually encodes information."
 status: published
 ---
 

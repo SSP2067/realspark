@@ -7,6 +7,7 @@ tags: [entrepreneurship, business, AI, strategy, wealth-building]
 sourceTitle: "AI CEO: Give Me 19 Minutes And I'll Teach You How To Make $1M"
 sourceUrl: https://www.youtube.com/watch?v=pevPR2Wa3jE
 publishDate: 2026-04-23
+description: "Dan Martell condenses 20+ years of business into four diagnostic principles — including the LIT Framework and seven business archetypes — that explain why most ideas fail before they start."
 status: published
 ---
 

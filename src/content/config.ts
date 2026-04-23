@@ -11,7 +11,8 @@ const sparks = defineCollection({
     sourceTitle: z.string(),
     sourceUrl: z.string().url(),
     publishDate: z.date(),
-    deepSpark: z.string().optional(), // slug of related Deep Spark
+    description: z.string().optional(), // 1–2 sentence SEO/OG description
+    deepSpark: z.string().optional(),
     status: z.enum(['draft', 'published']),
   }),
 });

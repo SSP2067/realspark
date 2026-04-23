@@ -7,6 +7,7 @@ tags: ["leadership", "executive-mindset", "high-performance", "decision-making"]
 sourceTitle: "Everything I Learned Sitting in Billion-Dollar Boardrooms"
 sourceUrl: "https://www.youtube.com/watch?v=yCCIDNvp5dk"
 publishDate: 2026-04-23
+description: "Sandeep Swadia distils what 20 years inside billion-dollar boardrooms actually teaches — frameworks on decision-making, leadership, and operating under pressure that no MBA covers."
 status: published
 ---
 
