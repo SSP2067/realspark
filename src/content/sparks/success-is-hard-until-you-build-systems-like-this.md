@@ -1,7 +1,7 @@
 ---
 title: "Success Is Hard Until You Build Systems Like This"
 category: youtube
-creator: the-mindset-mentor
+creator: sandeep-swadia-mitmonk
 readTime: 4
 tags: [systems, productivity, habits, discipline, success]
 sourceTitle: "Success Is Hard Until You Build Systems Like This"
