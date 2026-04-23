@@ -28,9 +28,7 @@ The core insight is that most success frameworks are identity-first ("become the
 
 ## My Take
 
-The insight that hit hardest: urgency fills every vacuum you leave. I've experienced this — when there's no system protecting deep work, the inbox always wins. The distinction between "building systems" and "making to-do lists" is real and underrated. To-do lists react to the day. Systems shape the day before it starts. The financial automation point is also one I'd extend: any decision you make the same way every time is a candidate for automation. The question isn't "am I disciplined enough?" — it's "which decisions can I make once and never revisit?"
-
-*[Section 4 placeholder — update with personal answers before republishing]*
+"Urgency fills every vacuum you leave." That one line describes probably 60% of my bad weeks. No system protecting the morning = first notification wins, and the day is gone before anything important gets touched. I've tried to-do lists. They don't fix this because a to-do list is reactive — it tells you what to do after the day's already started pulling you in different directions. A system decides before the day starts. That's the actual difference. The financial automation angle is also sharper than it sounds — once I set up automatic transfers I stopped "deciding" to save. The decision was made once and has been running on autopilot since. That's the template.
 
 ## Apply It
 

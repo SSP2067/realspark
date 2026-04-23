@@ -27,9 +27,7 @@ Martell's frame is that most people fail at business because they romanticise th
 
 ## My Take
 
-The LIT Framework reframe hit hardest. I've heard "follow your passion" so many times it's become noise — but framing it as *passion without leverage and timing is just expensive* makes the risk concrete. The business DNA archetypes are also a genuinely useful diagnostic: most business advice assumes you're building a SaaS product when the playbooks are completely different for services, media, or marketplaces. The moat principle is the one I'd apply immediately — what's one niche small enough to dominate completely before expanding?
-
-*[Section 4 placeholder — update with personal answers before republishing]*
+"Follow your passion" is the advice that's sent a lot of smart people down expensive dead ends. Martell's reframe — passion needs leverage and timing, not just enthusiasm — actually gives you something to check against before you commit. The business archetype thing also hit me. I've watched people (and honestly, myself at points) apply the wrong playbook to a business model that needed a completely different one. A content business and a SaaS product have almost nothing in common operationally, but people treat all startup advice as interchangeable. The moat-first principle is what I'd hold onto: start where you can win completely, then expand. Amazon with books, Facebook at Harvard. Pick the smallest version of the market you can dominate — not because you're thinking small, but because you're thinking clearly.
 
 ## Apply It
 

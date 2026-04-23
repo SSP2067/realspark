@@ -29,9 +29,7 @@ Sandeep frames learning as a metabolic and engineering challenge, not a characte
 
 ## My Take
 
-The thing that hit hardest here was the compression-first principle. I've caught myself trying to absorb content in full before deciding what matters — which is exactly backwards. The brain wants a hook before it accepts new cargo. The 3C Protocol is essentially a mental inbox-zero system: compress down to signal, compile through testing, consolidate through rest. The generation effect reframe is also underrated — that uncomfortable feeling of "I can't quite remember" is not a failure state, it's the learning state. Worth building into daily habits.
-
-*[Section 4 placeholder — update with personal answers before republishing]*
+Compression-first is the part I keep thinking about. My default is to consume everything first, decide what matters later — which means I'm trying to retain stuff before I've even decided if it's worth retaining. That's obviously backwards, but I'd never framed it that way until this video. The other thing: the generation effect. That friction you feel when you're trying to recall something and can't quite get there — I used to treat that as failing. Turns out it's the exact opposite. The struggle is the encoding. That's a mental model I want to keep front of mind every time I'm tempted to just re-read notes instead of testing myself.
 
 ## Apply It
 

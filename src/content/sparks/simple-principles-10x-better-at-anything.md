@@ -29,9 +29,7 @@ Sandeep positions these not as motivational statements but as operating principl
 
 ## My Take
 
-The principle that landed most personally: "The space between internal chatter and silence is where best choices live." I've made the best decisions I can point to in moments of genuine quiet — and the worst in moments of noise and pressure. The victim accountability framing is also unusually clean: it reframes responsibility not as self-blame but as self-preservation. If I own the outcome, I can change it. If I don't, I can't. That's not burden — it's leverage. The "desires approaching zero" mantra is probably the hardest one to live but the one with the longest payoff horizon.
-
-*[Section 4 placeholder — update with personal answers before republishing]*
+The silence principle is the one I keep coming back to. I genuinely cannot recall a decision made under pressure and noise that I'm proud of. The ones I'd stand behind — the ones that turned out right — were made after I'd stopped reacting and actually sat with the question. That's not mystical, it's just cognitive: when the noise is loud, you're running on pattern-matching and emotion. When it's quiet, you're actually thinking. The accountability reframe also lands differently than most versions of it. This isn't about self-blame — it's about not handing control over to factors you can't change. Once you blame the market, the timing, the economy, you've made yourself a spectator in your own situation. The "desires approaching zero" one I'll admit I'm still working on. But I've noticed the gap between wanting and having is exactly where most stress lives.
 
 ## Apply It
 
