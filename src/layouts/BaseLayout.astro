@@ -2,10 +2,16 @@
 interface Props {
   title: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description = 'Short, useful summaries of the best videos, books, and research.' } = Astro.props;
+const {
+  title,
+  description = 'Short, useful summaries of the best videos, books, and research.',
+  image = '/og-default.png',
+} = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -16,7 +22,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <title>{title} — Realspark</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} — Realspark`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Realspark" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} — Realspark`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
